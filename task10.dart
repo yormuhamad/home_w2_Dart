@@ -1,23 +1,15 @@
 void main() {
-  int a = 3;
-  int b = 7;
-  int pr = zioydKardan(a, b);
-  print('Ҳосили зарби  $a ва $b: $pr аст');
+  List<int> raqamho = [1, 2, 3, 4, 5];
+  int jamiKvadratho = jamiKvadtathoiAdadhoiJuft(raqamho);
+  print('Ҷамъи квадратҳои ҳамаи рақамҳои ҷуфт дар массив: $jamiKvadratho');
 }
 
-int zioydKardan(int a, int b) {
-  int natija = 0;
- // Агар b мусбат бошад, пас a b маротиба илова кунед
-  if (b > 0) {
-    for (int i = 0; i < b; i++) {
-      natija += a;
+int jamiKvadtathoiAdadhoiJuft(List<int> raqamho) {
+  int jamiadadho = 0;
+  for (int raqam in raqamho) {
+    if (raqam.isEven) { 
+      jamiadadho += raqam * raqam; 
     }
   }
- // Агар b манфӣ бошад, пас a ба (-b) зарб кунед
-  else if (b < 0) {
-    for (int i = 0; i > b; i--) {
-      natija -= a;
-    }
-  }
-  return natija;
+  return jamiadadho;
 }
