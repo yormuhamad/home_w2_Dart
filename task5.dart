@@ -1,12 +1,12 @@
 void main() {
-  List<int> numbers = [2, 3, 1, 4, 5];
-  int secondSmallest = findSecondSmallest(numbers);
-  print('Дуюм элементи хурдтарин дар массив: $secondSmallest');
+  List<int> raqamho = [2, 3, 1, 4, 5];
+  int duuymkhurdtarin = yakumkhurdtarin(raqamho);
+  print('Дуюм элементи хурдтарин дар массив: $duuymkhurdtarin');
 }
 
-int findSecondSmallest(List<int> numbers) {
+int yakumkhurdtarin(List<int> raqamho) {
 
-  numbers.sort();
+  raqamho.sort();
 
-  return numbers[1];
+  return raqamho[1];
 }
