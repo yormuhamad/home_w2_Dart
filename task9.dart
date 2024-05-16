@@ -1,21 +1,21 @@
 void main() {
-  List<int> numbers = [1, 3, 5, 7, 9];
-  findLargestEvenNumber(numbers);
+  List<int> raqamho = [1, 3, 5, 7, 9];
+  findLargestEvenNumber(raqamho);
 }
 
-void findLargestEvenNumber(List<int> numbers) {
-  int largestEven = 0;
+void findLargestEvenNumber(List<int> raqamho) {
+  int kalontarinJuft = 0;
   
-  for (int number in numbers) {
-    if (number.isEven) { // Санҷиши ҷуфт будани рақам
-      if (largestEven == 0 || number > largestEven) {
-        largestEven = number;
+  for (int raqam in raqamho) {
+    if (raqam.isEven) { // Санҷиши ҷуфт будани рақам
+      if (kalontarinJuft == 0 || raqam > kalontarinJuft) {
+        kalontarinJuft = raqam;
       }
     }
   }
   
-  if (largestEven != 0) {
-    print('Шумораи калонтарини ҷуфт: $largestEven');
+  if (kalontarinJuft != 0) {
+    print('Шумораи калонтарини ҷуфт: $kalontarinJuft');
   } else {
     print('No even number');
   }
