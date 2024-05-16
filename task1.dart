@@ -1,10 +1,10 @@
 void main() {
-  List<int> numbers = [1, 2, 3, 4, 5];
-  int sum = 0;
+  List<int> raqamho = [1, 2, 3, 4, 5];
+  int Jam = 0;
 
-  for (int number in numbers) {
-    sum += number;
+  for (int raqam in raqamho) {
+    Jam += raqam;
   }
 
-  print('Ҷамъи элементҳои массив: $sum');
+  print('Ҷамъи элементҳои массив: $Jam');
 }
