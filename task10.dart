@@ -1,15 +1,23 @@
 void main() {
-  List<int> numbers = [1, 2, 3, 4, 5];
-  int sumOfSquares = calculateSumOfSquaresOfEvenNumbers(numbers);
-  print('Ҷамъи квадратҳои ҳамаи рақамҳои ҷуфт дар массив: $sumOfSquares');
+  int a = 3;
+  int b = 7;
+  int pr = zioydKardan(a, b);
+  print('Ҳосили зарби  $a ва $b: $pr аст');
 }
 
-int calculateSumOfSquaresOfEvenNumbers(List<int> numbers) {
-  int sum = 0;
-  for (int number in numbers) {
-    if (number.isEven) { // Санҷед, ки рақам ҷуфт аст
-      sum += number * number; // Ба ҷамъ квадрати ададро илова кунед
+int zioydKardan(int a, int b) {
+  int natija = 0;
+ // Агар b мусбат бошад, пас a b маротиба илова кунед
+  if (b > 0) {
+    for (int i = 0; i < b; i++) {
+      natija += a;
     }
   }
-  return sum;
+ // Агар b манфӣ бошад, пас a ба (-b) зарб кунед
+  else if (b < 0) {
+    for (int i = 0; i > b; i--) {
+      natija -= a;
+    }
+  }
+  return natija;
 }
