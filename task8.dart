@@ -1,13 +1,13 @@
 void main() {
-  List<int> numbers = [9, 6, 3, 8, 5];
+  List<int> raqamho = [9, 6, 3, 8, 5];
   int k = 2;
-  int kthSmallest = findKthSmallest(numbers, k);
-  print('K-ум хурдтарин элемент: $kthSmallest');
+  int kumKhurdtarin = yoftanikumKhurdtarin(raqamho, k);
+  print('K-ум хурдтарин элемент: $kumKhurdtarin');
 }
 
-int findKthSmallest(List<int> numbers, int k) {
+int yoftanikumKhurdtarin(List<int> raqamho, int k) {
 
-  numbers.sort();
+  raqamho.sort();
 
-  return numbers[k - 1];
+  return raqamho[k - 1];
 }
