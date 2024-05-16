@@ -1,13 +1,13 @@
 void main() {
-  List<int> numbers = [1, 2, 3, 2, 2];
-  int lastElement = numbers.last;
-  int count = 0;
+  List<int> raqamho = [1, 2, 3, 2, 2];
+  int okhirinElemaent = raqamho.last;
+  int shumora = 0;
 
-  for (int number in numbers) {
-    if (number == lastElement) {
-      count++;
+  for (int raqam in raqamho) {
+    if (raqam == okhirinElemaent) {
+      shumora++;
     }
   }
 
-  print('Шумораи элементҳо ба элементи охирин баробар: $count');
+  print('Шумораи элементҳо ба элементи охирин баробар: $shumora');
 }
